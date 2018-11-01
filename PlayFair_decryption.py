@@ -1,4 +1,4 @@
-# This program encrypt the sentence using play fair cypher technique
+# This program decrypt the sentence using play fair cypher technique
 
 # Type your encryoted massage here (e.g e_msg is encrypted by "TextForEncyption" )
 e_msg='WCZVOVQYTDCLZPQO'
