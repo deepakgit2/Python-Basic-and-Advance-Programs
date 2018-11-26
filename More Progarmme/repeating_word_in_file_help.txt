@@ -1,0 +1,2 @@
+this text is a part of experiment. We are trying to find that how many words are repeating or not.
+That is the only purpose of this text. definitely this will helpfull.
