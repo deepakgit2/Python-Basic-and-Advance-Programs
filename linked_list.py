@@ -52,7 +52,7 @@ class LinkedList(object):
 			if obj.value == element:
 				obj = None
 				return None
-		raise 'Element should be present in linked list'
+		raise IndexError('Element should be present in linked list')
 
 
 
