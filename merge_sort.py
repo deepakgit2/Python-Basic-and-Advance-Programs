@@ -27,4 +27,4 @@ def merge_sort(arr):
 	r_arr = merge_sort(arr[mid:])
 	return merge(l_arr, r_arr)
 
-print 'sorted arr:',merge_sort(arr)
+print 'Sorted arr:',merge_sort(arr)
