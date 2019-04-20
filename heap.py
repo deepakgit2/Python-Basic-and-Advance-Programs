@@ -2,8 +2,8 @@
 
 
 class Heap(object):
-	def __init__(self, arr = []):
-		self.arr = arr
+	def __init__(self):
+		self.arr = []
 
 	# Add element in heap
 	def add(self, element):
