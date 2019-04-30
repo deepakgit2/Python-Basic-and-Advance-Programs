@@ -3,21 +3,19 @@
 import random
 arr = range(10)
 random.shuffle(arr)
-print 'Unsorted arr:', arr
+print ('Unsorted arr:', arr)
 
 # Merging Function
-def merge(l_arr, r_arr):
-	res = []
-	l,r = 0,0
-	while l<len(l_arr) and r<len(r_arr):
-		if l_arr[l]>r_arr[r]:
-			res.append(r_arr[r])
-			r += 1
+def merge(arr1, arr2):
+	temp_arr = []
+	while len(arr1) and len(arr2):
+		if arr1[0] <= arr2[0]:
+			temp_arr.append(arr1[0])
+			arr1 = arr1[1:]
 		else:
-			res.append(l_arr[l])
-			l += 1
-	res += r_arr[r:] if l==len(l_arr) else l_arr[l:]
-	return res
+			temp_arr.append(arr2[0])
+			arr2 = arr2[1:]
+	return temp_arr + arr1 + arr2
 
 def merge_sort(arr):
 	if len(arr) == 1:
@@ -27,4 +25,4 @@ def merge_sort(arr):
 	r_arr = merge_sort(arr[mid:])
 	return merge(l_arr, r_arr)
 
-print 'Sorted arr:',merge_sort(arr)
+print ('Sorted arr:',merge_sort(arr))
